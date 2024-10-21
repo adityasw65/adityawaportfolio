@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* border: 2px solid black; */
+}
+body
+{
+   font-family: 'poppins', sans-serif;
+}
+:root 
+{
+   --coralText: rgb(255, 86, 24);
+}
+
+/* navigation bar start  */
+nav 
+{
+   width: 100%;
+   background-color: rgb(128, 128, 128, 0.3);
+   display: flex;
+   justify-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   /* border: 2px solid black; */
+   z-index: 999;
+}
+nav #navigate 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-transform: uppercase;
+   color: white;
+}
+#navigate h2
+{
+   font-weight: 800;
+}
+#navigate h2 span 
+{
+   color: var(--coralText);
+}
+#navigate .ulMenu
+{
+   display: none;
+}
+#navigate .ulMenu li 
+{
+   list-style: none;
+}
+
+/* navigation bar end */
+
+
+
+/* background video with text start  */
+#background
+{
+   position: relative;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+#backVideo 
+{
+   width: 100%;
+   position: relative;
+}
+#backVideo video
+{
+   width: 100%;
+}
+
+#background .text 
+{
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.text:has(h1, h3)
+{
+   color: white;
+   font-weight: 800;
+}
+.text h3
+{
+   font-size: 0.7rem;
+   text-shadow: 12px 12px 15px black;
+}
+.text h1 span
+{
+   color: var(--coralText);
+}
+.text h1 
+{
+   margin-bottom: 10px;
+   text-shadow: 12px 12px 15px black;
+}
+.text a 
+{
+   font-size: 0.7rem;
+   text-decoration: none;
+   color: white;
+   background-color: var(--coralText);
+   padding: 10px 15px;
+}
+/* background video with text end  */
+
+
+
+/* mainContent start  */
+
+#mainContent 
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+/* choose pro start  */
+#mainContent #choosePro
+{
+   text-align: center;
+   padding: 10px;
+   /* border: 2px solid black; */
+}
+#choosePro h1 
+{
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+#choosePro h1 span 
+{
+   color: var(--coralText);
+}
+#choosePro p 
+{
+   color: grey;
+   font-size: 0.9rem;
+}
+/* choose pro end  */
+
+
+
+/* divisionPro start  */
+
+#divisionPro
+{
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+#divisionPro .item
+{
+   display: flex;
+   gap: 10px;
+   padding: 10px;
+}
+.item figure figcaption
+{
+   text-transform: uppercase;
+   color: var(--coralText);
+   font-size: 0.7rem;
+   font-weight: 500;
+}
+.item #info h1 
+{
+   font-weight: 600;
+}
+.item #info #sub-info
+{
+   color: grey;
+   font-size: 0.8rem;
+}
+/* divisionPro end  */
+
+
+/* dtbt start  */
+#dtbt
+{
+   margin-top: 50px;
+   padding: 60px 10px;
+   background-image: url(../images/background/cta-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   text-align: center;
+   color: white;
+   /* border: 2px solid white; */
+}
+#dtbt h1, a
+{
+   text-transform: uppercase;
+}
+#dtbt h1
+{
+   font-size: 2rem;
+   font-weight: 900;
+}
+#dtbt h1 span
+{
+   color: var(--coralText);
+}
+#dtbt p 
+{
+   margin-top: 15px;
+   margin-bottom: 40px;
+}
+#dtbt a 
+{
+   text-decoration: none;
+   color: white;
+   background-color: var(--coralText);
+   padding: 15px 10px;
+}
+/* dtbt end  */
+
+/* our-class start  */
+#our-class
+{
+   margin-top: 50px;
+   /* border: 2px solid black; */
+   text-align: center;
+   padding: 10px;
+}
+#our-class h1 
+{
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+#our-class h1 span 
+{
+   color: var(--coralText);
+}
+#our-class p 
+{
+   color: grey;
+   font-size: 0.9rem;
+}
+#our-class img 
+{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+/* our-class end */
+
+
+/* trainCards start  */
+#trainCards
+{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+   padding: 10px;
+}
+#trainCards .containCards .card
+{  
+   width: 90%;
+   /* display: flex;
+   flex-wrap: wrap;
+   gap: 10px; */
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.209);
+   border-radius: 5px;
+   padding: 30px 5px 30px 20px;
+   margin-bottom: 15px;
+}
+.containCards .card h3
+{
+   font-weight: 600;
+}
+#trainCards button 
+{
+   width: 90%;
+   padding: 20px 40px;
+   border: none;
+   background-color: var(--coralText);
+   border-radius: 5px;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin-top: 10px;
+}
+
+/* first-train-class start */
+#trainCards #first-train-class
+{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   padding: 30px 5px 30px 5px;
+   /* border: 2px solid; */
+}
+
+#trainCards #first-train-class img 
+{
+   /* align-self: center; */
+   width: 100%;
+   border-radius: 5px;
+}
+#trainCards #first-train-class h1 
+{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 1.4rem;
+}
+#trainCards #first-train-class p
+{
+   color: grey;
+   font-size: 0.9rem;
+   line-height: 25px;
+   margin-bottom: 20px;
+}
+#trainCards #first-train-class button
+{
+   padding: 14px 10px;
+   font-weight: 500;
+   width: 60%;
+   border-radius: 0px;
+   font-size: 0.9rem;
+   text-transform: uppercase;
+}
+/* first-train-class end  */
+/* trainCards end  */
+/* mainContent end  */
+
+
+/* footer start  */
+footer 
+{
+   width: 100%;
+   /* border: 2px solid black; */
+}
+footer #foot 
+{
+   margin: 45px auto;
+   /* border: 2px solid; */
+   text-align: center;
+   font-size: 13px;
+}
+footer #foot p
+{
+   margin-top: 7px;
+}
+#foot p a 
+{
+   text-decoration: none;
+   color: var(--coralText);
+}
+/* footer end  */
+
+
+
+/* media query start  */
+
+@media screen and (min-width: 768px)
+{
+   /* navigation bar start  */
+   
+   #navigate h2
+   {
+      align-self: center;
+      font-weight: 800;
+   }
+   /* navigation bar end  */
+
+
+   /* background video with text start  */
+   .text h3
+   {
+      font-size: 2rem;
+      text-shadow: 12px 12px 15px black;
+   }
+   .text h1 
+   {
+      font-size: 5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-shadow: 12px 12px 15px black;
+   }
+   .text a 
+   {
+      font-weight: 400;
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: white;
+      background-color: var(--coralText);
+      padding: 15px 30px;
+   }
+   /* background video with text end  */
+
+   /* trainCards start  */
+   #trainCards
+   {
+      width: 100%;
+      margin-top: 50px;
+      /* display: flex;
+      flex-direction: row;
+      gap: 10px; */
+      align-items: flex-start;
+      padding: 50px;
+      /* border: 2px solid black; */
+   }
+   #trainCards .containCards
+   {
+      width: 100%;
+   }
+   #trainCards .containCards .card
+   {  
+      width: 100%;
+      /* display: flex;
+      flex-wrap: wrap;
+      gap: 10px; */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.209);
+      border-radius: 5px;
+      padding: 30px 5px 30px 20px;
+      margin-bottom: 15px;
+   }
+   #trainCards button 
+   {
+      width: 100%;
+      padding: 20px 40px;
+      border: none;
+      background-color: var(--coralText);
+      border-radius: 5px;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 10px;
+   }
+
+
+   /* #first-train-class start */
+   #trainCards #first-train-class
+   {
+      width: 100%;
+      /* border: 2px solid black; */
+   }  
+   #trainCards #first-train-class img 
+   {
+      /* align-self: center; */
+      width: 100%;
+      border-radius: 5px;
+   }
+   #trainCards #first-train-class button
+   {
+      padding: 14px 10px;
+      font-weight: 500;
+      width: 25%;
+      border-radius: 0px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+   }
+   /* trainCards end  */
+
+
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+   /* navigation bar start  */
+   nav 
+   {
+      width: 100%;
+      background-color: rgb(128, 128, 128, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0px;
+      /* border: 2px solid black; */
+   }
+   nav #navigate 
+   {
+      display: flex;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      color: white;
+      gap: 50px;
+   }
+   #navigate h2
+   {
+      align-self: center;
+      font-weight: 800;
+   }
+   #navigate h2 span 
+   {
+      color: var(--coralText);
+   }
+   #navigate .ulMenu
+   {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   #navigate .ulMenu li 
+   {
+      list-style: none;
+   }
+   #navigate .ulMenu li a 
+   {
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: white;
+      transition: all .2s 0s linear;
+      font-weight: 600;
+   }
+   #navigate .ulMenu li a:hover 
+   {
+      color: var(--coralText);
+   }
+   #navigate .ulMenu #sign
+   {
+      width: 100%;
+      background-color: var(--coralText);
+      padding: 10px 15px;
+      transition: all .2s 0s linear;
+      border-radius: 5px;
+   }
+   #navigate .ulMenu #sign:hover
+   {
+      background-color: white;
+   }
+   #navigate .ulMenu #sign:hover a
+   {
+      color: var(--coralText);
+   }
+   /* navigation bar end  */
+
+
+   /* choose pro start  */
+   #mainContent 
+   {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+   }
+   #mainContent #choosePro
+   {
+      width: 45%;
+      text-align: center;
+      padding: 10px;
+      /* border: 2px solid black; */
+   }
+
+   /* divisionPro start  */
+
+   #divisionPro
+   {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      justify-content: center;
+      gap: 10px;
+      /* border: 2px solid black; */
+   }
+   #divisionPro .item
+   {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      padding: 10px;
+      /* border: 2px solid black; */
+   }
+   .item figure figcaption
+   {
+      text-transform: uppercase;
+      color: var(--coralText);
+      font-size: 0.7rem;
+      font-weight: 500;
+   }
+   .item #info h1 
+   {
+      font-weight: 600;
+   }
+   .item #info #sub-info
+   {
+      color: grey;
+      font-size: 0.8rem;
+   }
+   /* divisionPro end  */
+
+   /* dtbt start  */
+   #dtbt p 
+   {
+      width: 80%;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   /* dtbt end  */
+
+   /* our-class start  */
+   #our-class p 
+   {
+      width: 45%;
+      color: grey;
+      font-size: 0.9rem;   
+      margin-left: auto;
+      margin-right: auto;
+   }
+   /* our-class end  */
+
+   /* trainCard start  */
+   #trainCards
+   {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      /* gap: 1px; */
+      align-items: center;
+      padding: 20px;
+   }
+   #trainCards .containCards .card
+   {  
+      width: 70%;
+      /* display: flex;
+      flex-wrap: wrap;
+      gap: 10px; */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.209);
+      border-radius: 5px;
+      padding: 30px 5px 30px 20px;
+      margin-bottom: 15px;
+   }
+   #trainCards button 
+   {
+      width: 70%;
+      padding: 20px 40px;
+      border: none;
+      background-color: var(--coralText);
+      border-radius: 5px;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 10px;
+   }
+
+   #trainCards #first-train-class
+   {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 30px 5px 30px 5px;
+      /* border: 2px solid; */
+      margin-right: auto;
+   }
+   /* trainCard end  */
+}
+
+/* media query end  */
+

@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bexer Astro</title>
+    <link rel="icon" href="images/illustrations/logo_company.webp" type="image/x-icon">
+
+    <!-- aos cdn css link online  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- online bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- fontawesome icons link tag  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- own css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- website template start  -->
+    <section class="container-fluid g-0" style="overflow: hidden;" id="start">
+        <!-- header start  -->
+        <header>
+            <section class="container-fluid ">
+                <!-- head links  -->
+                <div class="row fixed-top" id="navbar">
+                    <div class="col-12">
+                        <div class="row pt-2 " id="head-links">
+                            <!-- social media links start -->
+                            <div class="col-12 col-md-6 ">
+                                <div class="row " id="head-media-links">
+                                    <div class="col-6 text-end pe-1">
+                                        <p>Connect with us:</p>
+                                    </div>
+                                    <div class="col-6 col-md-3 ps-1 d-flex gap-3 text-start">
+                                        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#github"><i class="fa-brands fa-github"></i></a>
+                                        <a href="#github"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- social media links end -->
+
+
+                            <!-- mail and number start -->
+                            <div class="col-12 col-md-6">
+                                <div class="row d-flex " id="head-mail-number">
+                                    <div class="col-6 col-md-4 text-end pe-1" id="mail">
+                                        <a href="mailto:">info@bexar.com</a>
+                                    </div>
+                                    <div class="col-6 col-md-6 text-start ps-1" id="call">
+                                        <p>Call now: <a href="tel:+">123-456-7890</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mail and number end  -->
+                        </div>
+
+
+
+                        <!-- menu and logo start  -->
+                        <div class="row" id="navbar">
+                            <div class="col-12">
+                                <nav class="navbar navbar-expand-lg bg-light">
+                                    <div class="container g-0">
+                                        <a class="navbar-brand" href="#start" id="logoAnchor">
+                                            <img src="images/illustrations/logo.webp" class="img-fluid" alt="">
+                                        </a>
+
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                            <ul
+                                                class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase text-dark fw-semibold ">
+                                                <li class="nav-item ">
+                                                    <a class="nav-link active " aria-current="page"
+                                                        href="#start">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        href="#about">About</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        href="#service">Services</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#team">Team</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        href="#testi">Testimonial</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="d-flex gap-3" id="threeIcon">
+                                            <button type="button" class="btn" data-bs-target="#search-modal"
+                                                data-bs-toggle="modal">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="langSelection">
+                                                <option value="1">En</option>
+                                                <option value="2">Fr</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- menu-logo end  -->
+                    </div>
+                </div>
+                <!-- head-links end  -->
+            </section>
+        </header>
+        <!-- header end  -->
+
+
+
+        <!-- modal start  -->
+        <div class="modal" tabindex="-1" id="search-modal" data-bs-backdrop="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <input type="search" name="search" id="search" placeholder="Search here..."
+                            class="form-control">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            id="closeButton"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end  -->
+
+
+
+        <!-- carousel start  -->
+        <section class="container-fluid mt-5" id="carousel-images">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active setImageText">
+                                <img src="images/background/banner-1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption" data-aos="fade-up" data-aos-duration="1500">
+                                    <h5>We are here to</h5>
+                                    <h1>planning business</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga voluptas,
+                                        commodi mollitia ullam et nam eius voluptatum iusto aliquam!
+                                    </p>
+                                    <a href="">More Details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item setImageText">
+                                <img src="images/background/banner-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>We are here to</h5>
+                                    <h1>planning business</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga voluptas,
+                                        commodi mollitia ullam et nam eius voluptatum iusto aliquam!
+                                    </p>
+                                    <a href="">More Details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item setImageText">
+                                <img src="images/background/banner-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>We are here to</h5>
+                                    <h1>planning business</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga voluptas,
+                                        commodi mollitia ullam et nam eius voluptatum iusto aliquam!
+                                    </p>
+                                    <a href="">More Details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item setImageText">
+                                <img src="images/background/banner-4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>We are here to</h5>
+                                    <h1>planning business</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga voluptas,
+                                        commodi mollitia ullam et nam eius voluptatum iusto aliquam!
+                                    </p>
+                                    <a href="">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- carousel end  -->
+
+
+        <!-- laterCarouselCard start  -->
+        <section class="container-fluid" id="laterCarouselCard">
+            <div class="row text-center d-flex gap-3 justify-content-center">
+                <div class="col-12 col-md-5 col-lg p-4 shadow rounded" id="card-1" data-aos="flip-left"
+                    data-aos-duration="1500">
+                    <div id="card-image">
+                        <img src="images/illustrations/idea.png" class="img-fluid w-50 h-50" alt="idea-solution">
+                    </div>
+                    <h1 class="mt-3">Business Solution</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet constur adipelit sed.
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 col-lg p-4 shadow rounded" id="card-2" data-aos="flip-left"
+                    data-aos-duration="1500">
+                    <div id="card-image">
+                        <img src="images/illustrations/research.png" class="img-fluid w-50 h-50" alt="idea-solution">
+                    </div>
+                    <h1 class="mt-3">Market Research</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet constur adipelit sed.
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 col-lg p-4 shadow rounded" id="card-3" data-aos="flip-left"
+                    data-aos-duration="1500">
+                    <div id="card-image">
+                        <img src="images/illustrations/strategy.png" class="img-fluid w-50 h-50" alt="idea-solution">
+                    </div>
+                    <h1 class="mt-3">Business Strategy</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet constur adipelit sed.
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 col-lg p-4 shadow rounded" id="card-4" data-aos="flip-left"
+                    data-aos-duration="1500">
+                    <div id="card-image">
+                        <img src="images/illustrations/performance.png" class="img-fluid w-50 h-50" alt="idea-solution">
+                    </div>
+                    <h1 class="mt-3">Speed Optimization</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet constur adipelit sed.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- laterCarouselCard end  -->
+
+
+        <!-- about start  -->
+        <div class="container-fluid mt-5">
+            <div class="row d-flex gap-5" id="about">
+                <div class="col-12 col-md p-0" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="images/illustrations/about.jpg" alt="about-image" class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-md p-0" data-aos="fade-left" data-aos-duration="1500">
+                    <p id="about-title">About Us</p>
+                    <h2>We Are Dynamic Team and Business Agency</h2>
+                    <p class="mb-4">
+                        Excepteur sint occaecat cupidatat non proident sunt iculpa qui officia deserunt mollit anim est.
+                        laborum sed perspiciatis unde omnis natus error sit voluptatem accusantium.
+                    </p>
+                    <a href="">More Service</a>
+                </div>
+            </div>
+        </div>
+        <!-- about end  -->
+
+
+        <!-- count start  -->
+        <div class="container-fluid mt-5" id="count">
+            <div class="row p-3">
+                <div class="col-12 col-md-6 col-lg d-flex gap-3 align-items-center" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <a href=""><i class="fas fa-bullseye"></i></a>
+                    <span>
+                        <h1><span class="counter">50</span> <span>+</span></h1>
+                        <p>Project Done</p>
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 col-lg d-flex gap-3 align-items-center" data-aos="fade-up-right"
+                    data-aos-duration="1500">
+                    <a href=""><i class="far fa-calendar-alt"></i></a>
+                    <span>
+                        <h1><span class="counter">25</span> <span>+</span></h1>
+                        <p>Years Experience</p>
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 col-lg d-flex gap-3 align-items-center" data-aos="fade-up-left"
+                    data-aos-duration="1500">
+                    <a href=""><i class="fas fa-award"></i></a>
+                    <span>
+                        <h1><span class="counter">250</span> <span>+</span></h1>
+                        <p>Awards Won</p>
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 col-lg d-flex gap-2 align-items-center" data-aos="fade-left"
+                    data-aos-duration="1500">
+                    <a href=""><i class="far fa-smile"></i></a>
+                    <span>
+                        <h1><span class="counter">500</span> <span>+</span></h1>
+                        <p>Happy Customer</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- count end  -->
+
+
+        <!-- choose-us start  -->
+        <div class="container-fluid mt-5">
+            <div class="row d-flex gap-4" id="choose-us">
+
+                <div class="col-12 col-lg order-lg-1 p-0" id="choose-image" data-aos="fade-left"
+                    data-aos-duration="1500">
+                    <img src="images/illustrations/choose.webp" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-12 col-lg order-lg-0 p-0" data-aos="fade-right" data-aos-duration="1500">
+
+                    <h4 id="choose-head">Why Choose us</h4>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h1 id="choose-heading">Why They Choose Bexar</h1>
+                        </div>
+
+                        <div class="col-12">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt
+                                ut labore.
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row gap-4" id="choose-wave-image">
+                                <div class="col-12">
+                                    <div class="row gap-2 gap-md-0">
+                                        <div class="col-4 col-md-2 col-lg-3 col-xl-2 pt-3">
+                                            <a href="" class="p-3"><i class="fas fa-cannabis"></i></a>
+                                        </div>
+                                        <div
+                                            class="col-7 col-md-10 col-lg-9 col-xl-10 d-flex flex-column justify-content-center">
+                                            <h2>Creative Design</h2>
+                                            <p>
+                                                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                                                officia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row gap-2 gap-md-0">
+                                        <div class="col-4 col-md-2 col-lg-3 col-xl-2 pt-3">
+                                            <a href="" class="p-3"><i class="fas fa-code"></i></a>
+                                        </div>
+                                        <div
+                                            class="col-7 col-md-10 col-lg-9 col-xl-10 d-flex flex-column justify-content-center">
+                                            <h2>Pixel Perfect Coding</h2>
+                                            <p>
+                                                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                                                officia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- choose-us end  -->
+
+
+
+        <!-- service start  -->
+        <section class="container-fluid mt-5" id="service">
+            <div class="row py-4" id="service-head">
+                <div class="col-12 text-center" id="service-heading" data-aos="fade-down" data-aos-duration="1500">
+                    <h4>Best Service</h4>
+                    <h1>Service We Provide</h1>
+                </div>
+            </div>
+
+            <div class="row " id="serviceCard" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="col-12 text-center">
+                    <div class="col-12 " id="sd">
+                        <div class="row justify-content-center gap-3" id="service-cards">
+                            <div class="col-12 col-md-5 col-lg shadow" id="card-1">
+                                <div class="row ">
+                                    <div class="col-12 text-center">
+                                        <img src="images/illustrations/service-1.CTNfOT8W_2w9R73.webp" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <h1>Business Consultancy Copy</h1>
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.
+                                        </p>
+                                        <a href="">Read More -- </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg shadow" id="card-2">
+                                <div class="row ">
+                                    <div class="col-12 text-center">
+                                        <img src="images/illustrations/service-2.Bm7Hme_S_Z2sHz0.webp" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <h1>Business Consulting</h1>
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.
+                                        </p>
+                                        <a href="">Read More -- </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg shadow" id="card-3">
+                                <div class="row ">
+                                    <div class="col-12 text-center">
+                                        <img src="images/illustrations/service-3.BB6CJbCb_22pzJg.webp" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <h1>Investment Planning Copy</h1>
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.
+                                        </p>
+                                        <a href="">Read More -- </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- service end  -->
+
+
+
+        <!-- team start  -->
+        <section class="container-fluid mt-5" id="team">
+            <div class="row  text-center position-relative" id="team-head" data-aos="fade-down"
+                data-aos-duration="1500">
+                <div class="col-12 text-center">
+                    <div class="col-12">
+                        <h4>Our Team</h4>
+                        <h1 class="text-uppercase">We are dynamic team and business agency</h1>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row mt-3 text-center justify-content-center gap-4" id="team-card">
+                        <div class="col-12 col-md-5 col-lg shadow p-0" data-aos="zoom-out" data-aos-duration="1500">
+                            <img src="images/illustrations/team-2.CbEXHqDD_Z1Crmgz.webp" class="img-fluid" alt="">
+                            <h1 class="text-uppercase mt-3">Alex Monatinmo</h1>
+                            <p>Designer</p>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg shadow p-0" data-aos="zoom-out" data-aos-duration="1500">
+                            <img src="images/illustrations/team-3.CN-Ncsu1_1GonL0.webp" class="img-fluid" alt="">
+                            <h1 class="text-uppercase mt-3">Brendan Alestico</h1>
+                            <p>Marketer</p>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg shadow p-0" data-aos="zoom-out" data-aos-duration="1500">
+                            <img src="images/illustrations/team-4.CwsDvvER_Z1u6RyK.webp" class="img-fluid" alt="">
+                            <h1 class="text-uppercase mt-3">Jennifer Garner</h1>
+                            <p>Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team end  -->
+
+
+
+        <!-- testi start  -->
+        <div class="container-fluid mt-5">
+            <div class="row " id="testi">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="col-12 text-center">
+                        <h4>Testimonial</h4>
+                        <h1>What are client say ?</h1>
+                    </div>
+
+                    <!-- carousel start  -->
+                    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel"
+                        data-aos="fade-up" data-aos-duration="1500">
+                        <div class="col-12 text-center">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testi-card testi-card-1 text-center">
+                                        <div id="testi-image" class="mx-auto">
+                                            <img src="images/illustrations/client-1.BmHno1Ah_Z2e4Au5.webp"
+                                                class="d-block img-fluid" alt="...">
+                                        </div>
+                                        <p class="mt-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quas quo non
+                                            quidem et commodi itaque quia harum quam qui? Doloribus quasi assumenda
+                                            nostrum ipsum error aut eveniet quas necessitatibus?
+                                        </p>
+                                        <h1>Marvin Mackeny</h1>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testi-card testi-card-2 text-center">
+                                        <div id="testi-image" class="mx-auto">
+                                            <img src="images/illustrations/client-2.PWMQZyEC_ZG4GHx.webp"
+                                                class="d-block img-fluid" alt="...">
+                                        </div>
+                                        <p class="mt-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quas quo non
+                                            quidem et commodi itaque quia harum quam qui? Doloribus quasi assumenda
+                                            nostrum ipsum error aut eveniet quas necessitatibus?
+                                        </p>
+                                        <h1>Marvin Mackeny</h1>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testi-card testi-card-3 text-center">
+                                        <div id="testi-image" class="mx-auto">
+                                            <img src="images/illustrations/client-3.BW-jzQZA_Z2wBT6f.webp"
+                                                class="d-block img-fluid" alt="...">
+                                        </div>
+                                        <p class="mt-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quas quo non
+                                            quidem et commodi itaque quia harum quam qui? Doloribus quasi assumenda
+                                            nostrum ipsum error aut eveniet quas necessitatibus?
+                                        </p>
+                                        <h1>Marvin Mackeny</h1>
+                                        <h4>Web Designer</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-side-button">
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- carousel end  -->
+
+                    </div>
+                </div>
+
+                <!-- testi end  -->
+
+                <!-- footer start  -->
+                <footer>
+                    <section class="container-fluid mt-5 " id="footer">
+                        <div class="row align-items-md-end">
+                            <div class="col-12 col-md-6">
+                                <p><span>Bexer</span> 2024 © Designed And</p> <a href="https://adityawaportfolio.netlify.app/" target="_blank">Made by
+                                    AdityaWa</a>
+                            </div>
+                            <div class="col-12 col-md-6 text-md-end">
+                                <p>Privacy Policy | Terms of Service</p>
+                            </div>
+                        </div>
+                    </section>
+                </footer>
+                <!-- footer end  -->
+
+
+    </section>
+    <!-- website template end  -->
+
+
+    <!-- aos script online cdn link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- online bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <!-- online jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- file imported of counter and waypoints  -->
+    <script src="js/counterup.js"></script>
+    <script src="js/waypoints.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(() => {
+            $(".counter").counterUp({
+                delay: 100,
+                time: 3000
+            })
+        });
+    </script>
+</body>
+
+</html>

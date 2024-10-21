@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -----------------------------> website css start <----------------------------- */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --dark-grey: #252D39;
+    --green: #86C33A;
+    --transition-state: all .3s 0s linear;
+}
+
+/* head-links start  */
+
+#head-links {
+    background-color: var(--dark-grey);
+    font-size: 0.7rem;
+
+}
+
+/* #head-links .col-12 
+{
+    border: 2px solid white;
+} */
+
+/* head-media-links start  */
+#head-media-links p {
+    color: rgb(215, 215, 215);
+}
+
+#head-media-links a i {
+    color: white;
+    transition: var(--transition-state);
+}
+
+#head-media-links a i:hover {
+    color: var(--green);
+}
+
+/* head-media-links end  */
+
+/* #head-mail-number start */
+/* #head-mail-number
+{
+    border: 2px solid white;
+} */
+#head-mail-number p {
+    color: rgb(215, 215, 215);
+}
+
+#head-mail-number a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+/* #mail, #call
+{
+    border: 2px solid white;
+} */
+
+/* head-mail-number end  */
+
+
+/* head-links end  */
+
+/* navbar start  */
+
+#navbar #logoAnchor {
+    width: 20%;
+}
+
+#navbar #logoAnchor img {
+    width: 80%;
+    mix-blend-mode: difference;
+}
+
+#navbar #langSelection {
+    /* border: 2px solid black; */
+    width: 70px;
+}
+
+/* #navbarSupportedContent
+{
+    border: 2px solid black;
+} */
+#navbarSupportedContent ul li a:hover {
+    color: var(--green);
+}
+
+/* navbar end  */
+
+
+
+/* carousel start  */
+.carousel-caption h5 {
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.carousel-caption h1 {
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    color: var(--dark-grey);
+}
+
+.carousel-caption a {
+    background-color: transparent;
+    color: var(--dark-grey);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 50px 50px;
+    border: 2px solid var(--dark-grey);
+    font-size: 0.9rem;
+    transition: var(--transition-state);
+    font-weight: 700;
+}
+
+.carousel-caption a:hover {
+    background-color: var(--green);
+    color: white;
+    border: none;
+}
+
+.carousel-item img {
+    height: 100vh;
+}
+
+.carousel-caption {
+    top: 20%;
+    bottom: auto;
+}
+
+.setImageText {
+    position: relative;
+}
+
+.setImageText .carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    text-align: start;
+}
+
+
+/* laterCarouselCard start  */
+
+/* #laterCarouselCard
+{
+    /* margin-top: 10px; 
+    border: 2px solid black;
+} */
+
+#card-1 #card-image img {
+    background-color: rgba(198, 223, 160, 0.461);
+    padding: 20px;
+    border-radius: 80%;
+    border: 2px solid var(--green);
+    animation: wave1 5s linear 0s infinite alternate;
+}
+
+@keyframes wave1 {
+    25% {
+        border-radius: 20% 40% 80% 50%;
+    }
+
+    50% {
+        border-radius: 50% 20% 40% 80%;
+    }
+
+    75% {
+        border-radius: 80% 50% 20% 40%;
+    }
+
+    100% {
+        border-radius: 40% 80% 50% 20%;
+    }
+}
+
+#card-2 #card-image img {
+    background-color: rgba(198, 223, 160, 0.461);
+    padding: 20px;
+    border-radius: 80%;
+    border: 2px solid var(--green);
+    animation: wave2 5s linear 0s infinite alternate;
+}
+
+@keyframes wave2 {
+    25% {
+        border-radius: 40% 80% 50% 20%;
+        
+    }
+
+    50% {
+        border-radius: 20% 40% 80% 50%;
+        
+    }
+
+    75% {
+        border-radius: 50% 20% 40% 80%;
+        
+    }
+
+    100% {
+        border-radius: 80% 50% 20% 40%;
+    }   
+}
+
+#card-3 #card-image img {
+    background-color: rgba(198, 223, 160, 0.461);
+    padding: 20px;
+    border-radius: 80%;
+    border: 2px solid var(--green);
+    animation: wave3 5s linear 0s infinite alternate;
+}
+
+@keyframes wave3 {
+    25% {
+        border-radius: 80% 50% 20% 40%;
+    }
+
+    50% {
+        border-radius: 40% 80% 50% 20%;
+    }
+
+    75% {
+        border-radius: 20% 40% 80% 50%;
+        
+    }
+
+    100% {
+        border-radius: 50% 20% 40% 80%;
+    }   
+}
+
+#card-4 #card-image img {
+    background-color: rgba(198, 223, 160, 0.461);
+    padding: 20px;
+    border-radius: 80%;
+    border: 2px solid var(--green);
+    animation: wave4 5s linear 0s infinite alternate;
+}
+
+@keyframes wave4 {
+    25% {
+        border-radius: 50% 20% 40% 80%;
+    }
+
+    50% {
+        border-radius: 80% 50% 20% 40%;
+    }
+
+    75% {
+        border-radius: 40% 80% 50% 20%;        
+    }
+
+    100% {
+        border-radius: 20% 40% 80% 50%;
+        
+    } 
+}
+
+#laterCarouselCard h1 {
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+#laterCarouselCard p {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+/* hover effect  */
+#laterCarouselCard #card-1  
+{
+    transition: var(--transition-state);
+}
+#laterCarouselCard #card-1:hover 
+{
+    background-color: var(--dark-grey);
+    color: white;
+    
+}
+
+#laterCarouselCard #card-2 
+{
+    transition: var(--transition-state);
+}
+#laterCarouselCard #card-2:hover 
+{
+    background-color: var(--dark-grey);
+    color: white;
+    
+}
+
+
+#laterCarouselCard #card-3 
+{
+    transition: var(--transition-state);
+}
+#laterCarouselCard #card-3:hover 
+{
+    background-color: var(--dark-grey);
+    color: white;
+    
+}
+
+
+#laterCarouselCard #card-4 
+{
+    transition: var(--transition-state);
+}
+#laterCarouselCard #card-4:hover 
+{
+    background-color: var(--dark-grey);
+    color: white;
+    
+}
+
+
+/* laterCarouselCard end  */
+
+/* carousel end  */
+
+
+
+/* about start  */
+#about #about-title {
+    color: grey;
+}
+
+#about h2 {
+    font-weight: bold;
+}
+
+#about p {
+    color: grey;
+    font-size: 0.7889rem;
+    padding-right: 100px;
+}
+
+#about a {
+    text-decoration: none;
+    color: var(--green);
+    border: 2px solid var(--green);
+    padding: 10px 30px;
+    border-radius: 50px 50px;
+    font-size: 0.9rem;
+    transition: var(--transition-state);
+}
+
+#about a:hover {
+    color: white;
+    background-color: #86C33A;
+}
+
+/* about end  */
+
+
+/* count start  */
+#count 
+{
+    background-color: var(--dark-grey);
+}
+#count a
+{
+    font-size: 4rem;
+    /* border: 2px solid black; */
+    color: var(--green);
+}
+#count span {
+    color: white;
+}
+
+/* count end  */
+
+
+/* choose-us start  */
+/* #choose-wave-image 
+{
+    border: 2px solid black;
+} */
+#choose-wave-image a {
+    background-color: rgba(198, 223, 160, 0.461);
+    /* padding: 15px; */
+    border-radius: 50% 50% 50% 50%;
+    border: 2px solid var(--green);
+    animation: wave1 4s linear 0s infinite alternate;
+    font-size: 3rem;
+    color: var(--green);
+}
+@keyframes wave1 {
+    25% {
+        border-radius: 70% 60% 50% 60%;
+    }
+
+    50% {
+        border-radius: 60% 50% 60% 70%;
+    }
+
+    75% {
+        border-radius: 70% 60% 50% 60%;
+    }
+
+    100% {
+        border-radius: 60% 50% 60% 70%;
+    }
+}
+
+#choose-us #choose-head
+{
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#choose-us #choose-heading
+{
+    /* color: grey; */
+    /* font-size: 1.2rem; */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#choose-us p {
+    color: grey;
+    font-size: 0.9rem;
+}
+#choose-wave-image h2 
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* choose-us end  */
+
+
+
+
+
+/* service start  */
+#service {
+    position: relative;
+    /* border: 2px solid red; */
+}
+#service-head
+{
+    background-color: var(--dark-grey);
+    /* height: 40vh; */
+}
+#service-heading
+{
+    height: 40vh;
+}
+#service-head h4 {
+    color: grey;
+    font-size: 1.2rem;
+}
+#service-head h1 
+{
+    color: white;
+}
+#serviceCard
+{
+    position: relative;
+    top: -50px;
+    left: 0;
+    /* border: 2px solid green */
+}
+/* #card-1 
+{
+    border: 2px solid black;
+} */
+#service-cards 
+{
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    /* border: 2px solid; */
+    padding: 0px 20px 0px 20px;
+}
+
+#service-cards h1 
+{
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+#service-cards p
+{
+    font-size: 0.8rem;
+    color: grey;
+}
+#service-cards a 
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px)
+{
+    #service-heading
+    {
+        height: 30vh;
+    }
+    #serviceCard
+    {
+        position: relative;
+        top: -40px;
+        left: 0;
+        /* border: 2px solid green */
+    }
+}
+@media screen and (min-width: 992px)
+{
+    #service-heading
+    {
+        height: 20vh;
+    }
+    #serviceCard
+    {
+        position: relative;
+        top: -10px;
+        left: 0;
+        /* border: 2px solid green */
+    }
+}
+
+
+
+/* service end  */
+
+
+
+/* team start  */
+
+#team-head h4 
+{
+    color: grey;
+    font-size: 1.1rem;
+}
+#team-head h1 
+{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+#team-card {
+    padding: 10px 0px 10px 0px;
+}
+#team-card h1 {
+    font-size: 1.1rem;
+}
+#team-card p {
+    font-size: 0.8rem;
+    color: grey;
+}
+/* team end  */
+
+
+
+/* testimonial start  */
+#testi-image 
+{
+    width: 80px;
+    height: 80px;
+}
+#testi-image img 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.testi-card p
+{
+    font-style: italic;
+    font-size: 0.9rem;   
+}
+.testi-card h1 
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.testi-card h4
+{
+    font-size: 1rem;
+    color: var(--green);
+}
+.carousel-side-button button span   
+{
+    background-color: var(--green);
+    border-radius: 50%;
+    transition: var(--transition-state);
+}
+.carousel-side-button button
+{
+    display: none;  
+}
+#carouselExampleControls:hover .carousel-side-button button
+{
+    display: block;
+} 
+
+@media screen and (min-width: 992px)
+{
+    .testi-card p
+    {
+        font-style: italic;
+        font-size: 0.9rem;   
+        padding: 0% 10% 0% 10%;
+    }
+}
+/* testimonial end  */
+
+
+/* footer start  */
+#footer 
+{
+    /* height: 10vh; */
+    /* padding: 10px 5px 10px 5px; */
+    background-color: var(--dark-grey);
+    color: white;
+}
+#footer p {
+    font-weight: 330;
+}
+#footer p span 
+{
+    color: var(--green);
+    
+}
+#footer a 
+{
+    color: var(--green);
+    text-decoration: none;
+}
+
+/* footer end  */
+/* -----------------------------> website css end <----------------------------- */
