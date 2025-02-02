@@ -31,7 +31,7 @@ nav.addEventListener("click", () => {
 
 // ------------------ typewriter start ------------------
 let name = document.getElementById("typedtext");
-let text = "I am Fullstack Developer";
+let text = "I am Java Fullstack Developer";
 // console.log(typeof text);
 // let len = text.length;
 // console.log(len);
